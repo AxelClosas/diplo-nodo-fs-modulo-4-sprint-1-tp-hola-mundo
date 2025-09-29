@@ -1,16 +1,63 @@
-# React + Vite
+# Trabajo Práctico Opcinal - Hola Mundo en ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Requisitos
 
-Currently, two official plugins are available:
+- Node.js >= 18
+- pnpm (o npm/yarn, pero se recomienda pnpm)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalación
 
-## React Compiler
+1. Clona el repositorio o descarga los archivos del proyecto.
+2. Instala las dependencias:
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+   ```sh
+   pnpm install
+   ```
 
-## Expanding the ESLint configuration
+   > Si usas npm:
+   > ```sh
+   > npm install
+   > ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Ejecución en modo desarrollo
+
+Inicia el servidor de desarrollo con:
+
+```sh
+pnpm dev
+```
+
+> O con npm:
+> ```sh
+> npm run dev
+> ```
+
+Luego abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+
+## Compilar para producción
+
+Para generar los archivos de producción:
+
+```sh
+pnpm build
+```
+
+Los archivos generados estarán en la carpeta `dist/`.
+
+## Previsualizar la build de producción
+
+Puedes previsualizar la build con:
+
+```sh
+pnpm preview
+```
+
+## Linting
+
+Para analizar el código con ESLint:
+
+```sh
+pnpm lint
+```
+
+---
